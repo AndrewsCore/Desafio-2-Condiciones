@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío 2 - Condiciones</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1>Desafío 2 - Condiciones</h1>
+
+    <!-- Borde -->
+    <section>
+        <h2>Borde toggle</h2>
+        <p>Haz click en la imagen</p>
+        <img src="image/perrito.jpg" alt="Perro" class="imagen-principal" id="imagen-borde" onclick="toggleBorde()">
+    </section>
+
+
+    <!-- Stickers -->
+    <section>
+        <h2>Stickers</h2>
+        <p>Puedes llevar hasta 10 stickers en total</p>
+        
+        <div class="sticker-container">
+            <div class="sticker-item">
+                <img src="image/logo-1.png" class="sticker-img" alt="Github">
+                <input type="number" id="sticker1" placeholder="0" min="0">
+            </div>
+            <div class="sticker-item">
+                <img src="image/logo-2.png" class="sticker-img" alt="Slack">
+                <input type="number" id="sticker2" placeholder="0" min="0">
+            </div>
+            <div class="sticker-item">
+                <img src="image/logo-3.png" class="sticker-img" alt="Git">
+                <input type="number" id="sticker3" placeholder="0" min="0">
+            </div>
+        </div>
+
+        <button onclick="verificarStickers()">Verificar</button>
+        <p id="resultado-stickers" class="resultado"></p>
+    </section>
+
+    <!-- Password -->
+    <section>
+        <h2>Password</h2>
+        <p>Ingresa el password</p>
+        
+        <div>
+            <select id="pass1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select id="pass2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select id="pass3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </div>
+
+        <button onclick="verificarPassword()">Ingresar</button>
+        <p id="resultado-password" class="resultado"></p>
+    </section>
+
+    <script src="js/borde.js"></script>
+    <script src="js/stickers.js"></script>
+    <script src="js/password.js"></script>
+</body>
+</html>
